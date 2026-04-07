@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Davide Conte</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Davide Conte</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-dc.png" alt="Davide Conte profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Davide Conte</h1>
+        <p class="section__text__p2">Data & Sport Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CVDavideConte.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ddavideconte/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/davidecodes'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/forceteck_pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Professional Focus</h3>
+              <p>Sport Science & Performance<br />Data Science & Analytics</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+            <h3>Education</h3>
+            <p>BSc Human Movement Science<br />MSc Sport & Exercise Science<br />MSc Big Data & AI</p>
+            </div>
+          </div>
+          <div class="text-container">
+          <p>
+          I am a Sport Scientist focused on understanding 
+          human movement and performance through both applied and scientific approaches. 
+          My background includes field and research experience in physiology, biomechanics, and physiomechanics. 
+          I am currently specializing in Big Data Analytics and Artificial Intelligence, 
+          applying data-driven and physics-based methods to physiological and biomechanical data 
+          within sport and human movement sciences.
+          </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- SPORT SCIENCE -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Sport Science & Human Movement</h2>
+            <div class="article-container">
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Motion Capture Systems</h3><p>Vicon</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Electromyography (EMG)</h3><p>Muscle activity analysis</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Athlete Monitoring Systems</h3><p>VALD</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div>
+                  <h3>GPS Performance Data Analysis</h3>
+                  <p>External load & research applications</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Biomechanical & Physiological Analysis</h3><p>Lab & field data</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Data Handling & Reporting</h3><p>Excel & PowerPoint</p></div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- DATA SCIENCE -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science & Artificial Intelligence</h2>
+            <div class="article-container">
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Programming</h3><p>Python, SQL</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Data Analysis</h3><p>Pandas, NumPy, Matplotlib</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Machine Learning</h3><p>PyTorch, Scikit-Learn</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Physics-Informed Models</h3><p>PINNs</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Web Scraping & NLP</h3><p>Sentiment Analysis</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Version Control</h3><p>Git & GitHub</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- PROJECT 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-step.jpeg" alt="Step Detection Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Step Detection using Deep Learning
+            </h2>
+            <p class="project-description">
+              Human gait analysis using deep neural networks applied to biomechanical time-series data.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/davidecodes/StepDetection_DeepLearning'"
+              >
+                GitHub Repository
+              </button>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/sna.png" alt="Football Transfer Network Analysis" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Football Transfer Network Analysis
+            </h2>
+            <p class="project-description">
+              Modeled football club–agent relationships using network analysis to uncover key actors and structural patterns in the transfer market.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/davidecodes/transfer_market'"
+              >
+                GitHub Repository
+              </button>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/pinn.png" alt="Lactate Prediction with PINNs" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Lactate Prediction with PINNs
+            </h2>
+            <p class="project-description">
+              Physics-Informed Neural Networks (PINNs) are used to model and predict lactate dynamics, improving accuracy and interpretability over traditional methods.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/davidecodes/Lactate_PINN'"
+              >
+                GitHub Repository
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:davcon24@gmail.com">davcon24@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/ddavideconte/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
